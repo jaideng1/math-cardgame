@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>j's card game admin screen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Scripts-->
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <style>
+    .players {
+      border: 1px solid black;
+    }
+
+    .player {
+      display: inline; 
+    }
+
+    .deck {
+      border: 1px solid black;
+      display: inline; 
+    }
+</style>
+  <body>
+    <center>
+
+      <div id="info"><h3 id="gameinfo">...</h3><h3></h3></div>
+      <br/>
+      <button onclick="startorstop()" id="gameprogress">Start Playing</button>
+
+      <br/>
+      <br/>
+      <br/>
+      <div class="deck" id="deck"></div>
+      <br/>
+      <div id="players" class="players"></div>
+    </center>
+    <script src="admin.js"></script>
+  </body>
+</html>
