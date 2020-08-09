@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>jaiden's card game playing</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Scripts-->
+    <script src="/socket.io/socket.io.js"></script>
+    
+  </head>
+  <style>
+    .cards {
+      border: 1px solid black;
+    }
+
+    .card {
+      border: 1px solid black;
+      display: inline; 
+    }
+</style>
+  <body>
+    <br/>
+    <br/>
+    <br/>
+    <center>
+      <div id="login">
+        <input type="text" id="name" placeholder="your name...">
+        <button onclick="joingame()">join game</button>
+      </div>
+      <br/>
+      <br/>
+      <div id="cards" class="cards"></div>
+      <br/>
+      <div id="info">
+        For reference:<br/>
+        In the equasion, for suits,<br/>
+        Diamonds is represented as 1,<br/>
+        Clubs is represented as 2,<br/>
+        Hearts is represented as 3,<br/>
+        And Spades is represented as 4.<br/>
+        And for cards;<br/>
+        Ace is represented as 1,<br/>
+        Jack is represented as 11,<br/>
+        Queen is represented as 12,<br/>
+        And King is represented as 13.<br/>
+      </div>
+    </center>
+    <script src="playgame.js"></script>
+  </body>
+</html>
